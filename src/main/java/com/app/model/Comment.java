@@ -16,7 +16,6 @@ import java.time.LocalDate;
 
 @AllArgsConstructor
 @NoArgsConstructor
-@ToString
 @SuperBuilder
 @Entity
 @Table(name = "comments")

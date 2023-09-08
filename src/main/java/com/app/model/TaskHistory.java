@@ -11,7 +11,7 @@ import java.time.LocalDate;
 @NoArgsConstructor
 @SuperBuilder
 @Entity
-@Table(name = "task_history")
+@Table(name = "tasks_history")
 public class TaskHistory extends BaseEntity {
     private String changeDescription;
     private LocalDate changeDate;

@@ -13,7 +13,6 @@ import java.util.List;
 
 @AllArgsConstructor
 @NoArgsConstructor
-@ToString
 @SuperBuilder
 @Entity
 @Table(name = "projects")
