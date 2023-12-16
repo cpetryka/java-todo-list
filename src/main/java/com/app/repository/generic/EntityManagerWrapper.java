@@ -1,4 +1,4 @@
-package com.app.repo.generic;
+package com.app.repository.generic;
 
 import jakarta.persistence.EntityManager;
 import jakarta.persistence.EntityManagerFactory;

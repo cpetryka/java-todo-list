@@ -1,6 +1,6 @@
-package com.app.repo;
+package com.app.repository;
 
 import com.app.model.TaskHistory;
-import com.app.repo.generic.CrudRepository;
+import com.app.repository.generic.CrudRepository;
 
 public interface TaskHistoryRepository extends CrudRepository<TaskHistory, Long> {}

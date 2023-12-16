@@ -1,4 +1,4 @@
-package com.app.repo.generic;
+package com.app.repository.generic;
 
 import java.util.List;
 import java.util.Optional;

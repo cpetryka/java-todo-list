@@ -1,6 +1,6 @@
-package com.app.repo;
+package com.app.repository;
 
 import com.app.model.Comment;
-import com.app.repo.generic.CrudRepository;
+import com.app.repository.generic.CrudRepository;
 
 public interface CommentRepository extends CrudRepository<Comment, Long> {}

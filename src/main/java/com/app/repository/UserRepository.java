@@ -1,6 +1,6 @@
-package com.app.repo;
+package com.app.repository;
 
 import com.app.model.User;
-import com.app.repo.generic.CrudRepository;
+import com.app.repository.generic.CrudRepository;
 
 public interface UserRepository extends CrudRepository<User, Long> {}
