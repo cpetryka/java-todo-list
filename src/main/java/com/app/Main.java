@@ -5,21 +5,19 @@ import com.app.model.Project;
 import com.app.model.status.Status;
 import com.app.model.Task;
 import com.app.model.User;
+import com.app.repository.impl.UserRepositoryImpl;
+import com.app.config.AppConfig;
 import jakarta.persistence.EntityManager;
 import jakarta.persistence.EntityManagerFactory;
 import jakarta.persistence.EntityTransaction;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
-import org.springframework.context.support.AbstractApplicationContext;
 
 import java.time.LocalDate;
 
 public class Main {
     public static void main(String[] args) {
-        AbstractApplicationContext context
-                = new AnnotationConfigApplicationContext(OrmConfig.class);
-
-        var emf
-                = context.getBean("entityManagerFactory", EntityManagerFactory.class);
+        var context = new AnnotationConfigApplicationContext(AppConfig.class);
+        var emf = context.getBean("entityManagerFactory", EntityManagerFactory.class);
 
         EntityManager em = null;
         EntityTransaction tx = null;
