@@ -8,10 +8,12 @@ import com.app.repository.generic.EntityManagerWrapper;
 import jakarta.persistence.EntityManager;
 import jakarta.persistence.EntityManagerFactory;
 import jakarta.persistence.EntityTransaction;
+import org.springframework.stereotype.Repository;
 
 import java.util.List;
 import java.util.Optional;
 
+@Repository
 public class UserRepositoryImpl extends AbstractCrudRepository<User, Long> implements UserRepository {
     public UserRepositoryImpl(EntityManagerFactory emf) {
         super(emf);
